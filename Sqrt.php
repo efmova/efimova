@@ -9,7 +9,7 @@ Class Sqrt extends Line implements EquationInterface
         return $x;
     }
 
-    public function solve($a, $b, $c)
+    public function solve($a, $b, $c):array
     {
         $d = $this->dis($a, $b, $c);
         if ($a == 0) {
@@ -25,7 +25,6 @@ Class Sqrt extends Line implements EquationInterface
         if ($d == 0) {
             return $this->X = array(-($b / (2 * $a)));
         }
-        return $this->X = NULL;
         throw  new EfimovaException("Ошибка:уранение не имеет корней");
     }
 }

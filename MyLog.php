@@ -8,12 +8,12 @@ class MyLog extends LogAbstract implements LogInterface
     {
       $this->log[] = $str;
     }
-    public static function log($str)
+    public static function log($str):void
     {
        self::Instance()->__log($str);
     }
 
-    public static function write()
+    public static function write():void
     {
         MyLog::Instance()->_write();
     }
