@@ -1,0 +1,16 @@
+{
+    "name": "efmova/efimova",
+    "type": "library",
+    "authors": [
+        {
+            "name": "efmova",
+            "email": "efimovadariaa@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "efimova\\": ""
+        }
+    }
+}
